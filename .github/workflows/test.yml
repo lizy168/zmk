@@ -54,7 +54,6 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-        timeout-minutes: 2
         continue-on-error: true
       - name: Initialize workspace (west init)
         run: west init -l app
