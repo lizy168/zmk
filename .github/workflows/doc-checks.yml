@@ -34,3 +34,5 @@ jobs:
       - name: TypeScript check
         run: npm run typecheck
         working-directory: docs
+
+# replay trigger
