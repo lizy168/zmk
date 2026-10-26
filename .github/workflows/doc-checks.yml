@@ -1,6 +1,7 @@
-name: Docs Checks
+﻿name: Docs Checks
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - ".github/workflows/doc-checks.yml"
@@ -36,3 +37,4 @@ jobs:
         working-directory: docs
 
 # replay trigger
+
