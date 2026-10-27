@@ -1,6 +1,7 @@
 name: Hardware Metadata Validation
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - ".github/workflows/hardware-metadata-validation.yml"
