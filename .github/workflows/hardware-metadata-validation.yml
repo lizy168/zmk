@@ -1,6 +1,7 @@
 name: Hardware Metadata Validation
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - ".github/workflows/hardware-metadata-validation.yml"
@@ -20,7 +21,7 @@ jobs:
     container:
       image: docker.io/zmkfirmware/zmk-dev-arm:3.2
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install dependencies
         run: pip install -r app/scripts/requirements.txt
       - name: West init
